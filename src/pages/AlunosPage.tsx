@@ -8,7 +8,6 @@ import { useTheme } from '../context/ThemeContext';
 // Imagens de Antes e Depois (Transformações)
 import aluno1 from '../assets/aluno1.png';
 import aluno2 from '../assets/aluno2.png';
-import aluno3 from '../assets/aluno3.png';
 
 // Avatares ilustrados para os depoimentos
 import dep1 from '../assets/dep1.png';
@@ -41,14 +40,6 @@ const TRANSFORMATIONS: TransformationCard[] = [
     time: '30 dias',
     type: 'Consultoria Online',
     gradient: 'linear-gradient(to top, #BA1015 0%, rgba(186, 16, 21, 0.88) 35%, transparent 68%)',
-  },
-  {
-    id: 't3',
-    image: aluno3,
-    alt: 'Transformação 45 dias - Consultoria Online',
-    time: '45 dias',
-    type: 'Consultoria Online',
-    gradient: 'linear-gradient(to top, #082D44 0%, rgba(8, 45, 68, 0.88) 35%, transparent 68%)',
   },
 ];
 
@@ -217,7 +208,7 @@ export const AlunosPage: React.FC = () => {
             </p>
           </div>
 
-          {/* 3 Cards Verticais de Transformação */}
+          {/* Cards Verticais de Transformação */}
           <div className="flex flex-col gap-5">
             {TRANSFORMATIONS.map((card) => (
               <div
