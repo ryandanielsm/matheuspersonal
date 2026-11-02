@@ -170,7 +170,7 @@ export const StudentDetailModal: React.FC<StudentDetailModalProps> = ({
         <button
           onClick={() => {
             onClose();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo(0, 0);
             navigate('/formulario');
           }}
           type="button"

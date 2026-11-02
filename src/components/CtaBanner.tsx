@@ -30,7 +30,7 @@ export const CtaBanner: React.FC = () => {
 
           <button
             onClick={() => {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
+              window.scrollTo(0, 0);
               navigate('/formulario');
             }}
             type="button"

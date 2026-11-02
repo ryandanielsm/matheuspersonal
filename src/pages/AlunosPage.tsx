@@ -145,7 +145,7 @@ export const AlunosPage: React.FC = () => {
 
   // Garante que a página sempre role automaticamente para o topo ao carregar
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -162,7 +162,7 @@ export const AlunosPage: React.FC = () => {
         <div className="pt-1 pb-4">
           <button
             onClick={() => {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
+              window.scrollTo(0, 0);
               navigate('/');
             }}
             type="button"
@@ -353,7 +353,7 @@ export const AlunosPage: React.FC = () => {
           <div className="mt-5">
             <button
               onClick={() => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                window.scrollTo(0, 0);
                 navigate('/formulario');
               }}
               type="button"

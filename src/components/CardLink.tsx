@@ -28,7 +28,7 @@ export const CardLink: React.FC<CardLinkProps> = ({
   const navigate = useNavigate();
 
   const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo(0, 0);
     navigate(path);
   };
 

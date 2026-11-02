@@ -29,10 +29,11 @@
   font-family: var(--font-inter);
 }
 
-/* Custom smooth transitions & animations */
+/* Base HTML & Body */
 html {
-  scroll-behavior: smooth;
   font-family: var(--font-inter);
+  -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -40,7 +41,7 @@ body {
   padding: 0;
   background-color: #0A0A0A;
   color: #ffffff;
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -60,9 +61,8 @@ html.light body {
   width: 100%;
   max-width: 430px; /* Largura exata do layout mobile de referência */
   margin: 0 auto;   /* Centraliza perfeitamente no meio da tela do PC */
-  min-height: 100vh;
+  min-height: 100dvh;
   position: relative;
-  overflow-x: hidden;
 }
 
 @media (min-width: 768px) {
@@ -70,9 +70,9 @@ html.light body {
     max-width: 430px;
     margin: 0 auto;
     min-height: calc(100vh - 80px);
-    border-radius: 32px; /* Cantos arredondados estilo card flutuante */
+    border-radius: 32px; /* Cantos arredondados estilo card flutuante no PC */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* Efeito 3D de profundidade */
-    overflow: hidden;
+    overflow: hidden; /* Recorta o conteúdo nos cantos arredondados apenas no desktop */
   }
 
   html.light .app-container {

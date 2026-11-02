@@ -17,8 +17,8 @@ export const PageContainer: React.FC<PageContainerProps> = ({
 
   return (
     <div
-      className={`min-h-screen w-full flex justify-center items-start md:py-10 transition-colors duration-300 antialiased selection:bg-red-600 selection:text-white ${
-        isDark ? 'bg-[#0A0A0A]' : 'bg-[#DCDCD6]'
+      className={`min-h-[100dvh] w-full flex justify-center items-start md:py-10 transition-colors duration-300 antialiased selection:bg-red-600 selection:text-white ${
+        isDark ? 'bg-[#181818] md:bg-[#0A0A0A]' : 'bg-[#F4F4F0] md:bg-[#DCDCD6]'
       }`}
     >
       {/* 

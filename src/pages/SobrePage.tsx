@@ -13,7 +13,7 @@ export const SobrePage: React.FC = () => {
 
   // Garante scroll automático para o topo ao carregar a página
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -30,7 +30,7 @@ export const SobrePage: React.FC = () => {
         <div className="pt-1 pb-4">
           <button
             onClick={() => {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
+              window.scrollTo(0, 0);
               navigate('/');
             }}
             type="button"

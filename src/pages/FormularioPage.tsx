@@ -125,7 +125,7 @@ export const FormularioPage: React.FC = () => {
 
   // Garante que a página sempre rola para o topo ao carregar
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo(0, 0);
   }, []);
 
   // Manipulador para seleção única
@@ -247,7 +247,7 @@ Fico no aguardo para conversarmos sobre como funciona!`;
         <div className="pt-1 pb-4">
           <button
             onClick={() => {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
+              window.scrollTo(0, 0);
               navigate('/');
             }}
             type="button"

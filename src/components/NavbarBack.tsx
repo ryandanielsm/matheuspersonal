@@ -18,7 +18,7 @@ export const NavbarBack: React.FC<NavbarBackProps> = ({
   const isLight = theme === 'light';
 
   const handleBack = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo(0, 0);
     if (window.history.length > 2) {
       navigate(-1);
     } else {
