@@ -14,8 +14,8 @@ import card3 from '../assets/card3.png';
 
 export const Home: React.FC = () => {
   // Matheus's direct contact links
-  const instagramUrl = 'https://www.instagram.com/';
-  const whatsappUrl = 'https://wa.me/5585999999999?text=Ol%C3%A1%20Matheus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20seu%20projeto%20de%20estudos%20e%20consultoria.';
+  const instagramUrl = 'https://www.instagram.com/mat3us__mendes/';
+  const whatsappUrl = 'https://wa.me/558494277261?text=Ol%C3%A1%20Matheus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20seu%20acompanhamento.';
 
   return (
     <PageContainer noPadding className="animate-page-enter">
